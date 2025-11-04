@@ -1,2 +1,3 @@
 # kuralme.github.io
-Personal portfolio
+
+My portfolio of robotics projects
