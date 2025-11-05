@@ -17,7 +17,4 @@ Key implementation points:
 - Ground-station integration using a Python + ROS script to provide joystick-based reference angles and to log telemetry during tests.
 - Lightweight mechanical frame assembled from Makeblock components for rapid prototyping and validation.
 
-Demo video:
-
-<iframe width="800" height="450" src="https://youtu.be/svHYbfm_wV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br>
+[![Quad test]({{ site.url }}{{ site.baseurl }}/assets/quad.gif)](https://youtu.be/svHYbfm_wV0)

@@ -17,7 +17,4 @@ Algorithm features:
 - **Loop closing & relocalization:** loop closures are detected, a pose‑graph optimization is run to remove drift, and full bundle adjustment refines the map.
 - **Multi-sensor support:** ORB‑SLAM3 supports monocular/stereo/RGB‑D and optional IMU fusion to recover scale and improve robustness.
 
-Demo video:
-
-<iframe width="800" height="450" src="https://www.youtube.com/watch?v=uyDB0oSnJ2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br>
+[![Kitti demo]({{ site.url }}{{ site.baseurl }}/assets/orbslam3.gif)](https://youtu.be/uyDB0oSnJ2U)

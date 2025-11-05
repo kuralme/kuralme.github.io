@@ -10,8 +10,7 @@ description: A 6-DOF robot arm programmed to manipulate cup from counter to deli
 
 This project is the final outcome of my work in The Construct’s Robotics Masterclass, featuring an advanced robotics application that demonstrates refined Pick-and-Place capabilities with the **UR3e robotic arm**. The Starbots Coffee Dispenser system is designed to automate a crucial step in robotic coffee service - transferring coffee cups from a counter to a delivery robot's tray.
 
-<iframe width="800" height="450" src="https://www.youtube.com/watch?v=4XE2JNb8slM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br>
+[![Final demo]({{ site.url }}{{ site.baseurl }}/assets/final_sim.gif)](https://youtu.be/4XE2JNb8slM)
 
 The project is structured into multiple ROS2 packages, each handling specific aspects of the automation:
 
@@ -38,3 +37,5 @@ The project implemented in two separate branches:
 - A simulation branch that replicates the functionality in a Gazebo environment, allowing for safe testing and validation
 
 Both implementations share core functionalities but are specifically tuned for their respective environments, ensuring optimal performance whether in simulation or real-world operation.
+
+[![Final Gazebo demo]({{ site.url }}{{ site.baseurl }}/assets/final_sim.gif)](https://youtu.be/4XE2JNb8slM)
