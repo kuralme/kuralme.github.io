@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Coffee Cup Dispenser">
-  <meta property="og:description" content="A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot">
-  <meta property="og:image" content="https://kuralme.github.io/assets/final_sim.gif">
+  <meta property="og:title" content="Contact">
+  <meta property="og:description" content="portfolio of my robotics projects and research">
+  <meta property="og:image" content="https://kuralme.github.io/assets/aero.jpg">
 
-  <title>Coffee Cup Dispenser</title>
-  <meta name="description" content="A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot">
+  <title>Contact</title>
+  <meta name="description" content="portfolio of my robotics projects and research">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -60,11 +60,11 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
 
       <a class="nav-item nav-link " href="/about/">About</a>
 
-      <a class="nav-item nav-link " href="/contact/">Contact</a>
+      <a class="nav-item nav-link active" href="/contact/">Contact</a>
 
       <a class="nav-item nav-link " href="/resume/">Resume</a>
 
@@ -76,52 +76,40 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="starbots-coffee-dispenser-project">Starbots Coffee Dispenser Project</h1>
-
-<h2 id="overview">Overview</h2>
-
-<p>This project is the final outcome of my work in The Construct’s Robotics Masterclass, featuring an advanced robotics application that demonstrates refined Pick-and-Place capabilities with the <strong>UR3e robotic arm</strong>. The Starbots Coffee Dispenser system is designed to automate a crucial step in robotic coffee service - transferring coffee cups from a counter to a delivery robot’s tray.</p>
-
-<p><a href="https://youtu.be/4XE2JNb8slM"><img src="http://0.0.0.0:4000/assets/final_sim.gif" alt="Final demo" /></a></p>
-
-<p>The project is structured into multiple ROS2 packages, each handling specific aspects of the automation:</p>
-
-<ul>
-  <li><strong>Motion Planning &amp; Control</strong>: Utilizes <strong>MoveIt2</strong> framework for:
-    <ul>
-      <li>Sophisticated path planning with selected OMPL planners, considering environmental constraints</li>
-      <li>Real-time trajectory generation</li>
-      <li>Precise end-effector control for cup manipulation</li>
-    </ul>
-  </li>
-  <li><strong>Perception Pipeline</strong>: Implements an object detection system using both RGB camera feeds and depth information. The system processes point cloud data to:
-    <ul>
-      <li>Detect and locate coffee cups on the counter</li>
-      <li>Identify available slots on the delivery robot’s tray</li>
-      <li>Generate an OctoMap representation of the environment for collision-aware planning</li>
-    </ul>
-  </li>
-  <li><strong>Task Orchestration</strong>: Employs a behavior tree architecture to manage the complete task sequence:
-    <ul>
-      <li>Pre-pick positioning</li>
-      <li>Cup grasping operations</li>
-      <li>Transfer movements involves carrying the cup upright</li>
-      <li>Precise placement on the delivery robot’s tray</li>
-      <li>Return to home position</li>
-    </ul>
-  </li>
-</ul>
-
-<p>The project implemented in two separate branches:</p>
-
-<ul>
-  <li>The main branch is optimized for real-world deployment with the physical UR3e robot</li>
-  <li>A simulation branch that replicates the functionality in a Gazebo environment, allowing for safe testing and validation</li>
-</ul>
-
-<p>Both implementations share core functionalities but are specifically tuned for their respective environments, ensuring optimal performance whether in simulation or real-world operation.</p>
-
-<p><a href="https://youtu.be/4XE2JNb8slM"><img src="http://0.0.0.0:4000/assets/final_sim.gif" alt="Final Gazebo demo" /></a></p>
+  <section class="split contact">
+    <section class="alt">
+        <h3>Address</h3>
+        <p>ABC Road<br />
+        North York, ON ABC ABC</p>
+    </section><hr /><br />
+    <section>
+        <h3>Phone</h3>
+        <p>+1 (289) 990 62 97</p>
+    </section><hr /><br />
+    <section>
+        <h3>Personal Email</h3>
+        <a class="dy ke" href="mailto:kuralme@protonmail.com" rel="noopener ugc nofollow" target="_blank">kuralme@protonmail.com</a>
+    </section><hr /><br />
+    <section>
+        <h3>Socials &amp; Other</h3>
+    <p class="text-left">
+        <a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/kuralme">
+  GitHub
+</a>
+        <a class="m-1 btn btn-outline-primary btn-2 " href="https://linkedin.com/in/kme9">
+  LinkedIn
+</a>
+        <a class="m-1 btn btn-outline-primary btn-2 " href="https://youtube.com/@kuralme1079">
+  YouTube
+</a>
+    </p>
+    <p class="text-left">
+        <a class="m-1 btn btn-outline-primary btn-2 " href="https://app.theconstruct.ai/Egeigen/">
+  Masterclass Portfolio
+</a>
+    </p>
+    </section><hr /><br />
+</section>
 
 </div>
   </main>
