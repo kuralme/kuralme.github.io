@@ -22,11 +22,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Warehouse Automation Robot">
-  <meta property="og:description" content="Warehouse logistics with AMR">
+  <meta property="og:description" content="RB1, an AMR demonstrating robotics can streamline warehouse operations — autonomously localizing, navigating, and transporting shelves in both simulation and...">
   <meta property="og:image" content="https://kuralme.github.io/assets/warehouse_robot.gif">
 
   <title>Warehouse Automation Robot</title>
-  <meta name="description" content="Warehouse logistics with AMR">
+  <meta name="description" content="RB1, an AMR demonstrating robotics can streamline warehouse operations — autonomously localizing, navigating, and transporting shelves in both simulation and...">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -76,73 +76,38 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="warehouse-automation-project">Warehouse Automation Project</h1>
 
-<p>This project, developed as part of The Construct’s ROS2 Navigation Course, demonstrates advanced autonomous navigation capabilities using the <strong>RB1 mobile robot</strong>. The system showcases a complete warehouse automation solution that leverages the <strong>ROS 2 Nav2 stack</strong> for robust autonomous navigation and task execution in both simulated and real environments.</p>
+<p>This project, developed as part of <em>Robotics Masterclass</em> ROS2 Navigation Course, demonstrates advanced autonomous navigation capabilities using the <strong>RB1 mobile robot</strong> by Robotnik. The system showcases a complete warehouse automation solution that leverages the <strong>ROS 2 Nav2 stack</strong> for robust autonomous navigation and task execution in both simulated and real environments.</p>
 
 <h2 id="key-features">Key Features</h2>
 
 <ul>
   <li>
-    <p><strong>Automatic Localization</strong><br />
-Robust pose estimation using AMCL localization</p>
+    <p><strong>Autonomous Localization &amp; Navigation</strong>: Powered by the ROS 2 Nav2 framework, the AMR achieves robust self-localization using AMCL and performs real-time path planning with dynamic obstacle avoidance. It follows precise trajectories and continuously replans routes in response to environmental changes, ensuring smooth and efficient movement throughout the warehouse.</p>
   </li>
   <li>
-    <p><strong>Precision Navigation</strong><br />
-Advanced path planning with dynamic obstacle avoidance</p>
+    <p><strong>Intelligent Task Management</strong>: Integrates the <em>Nav2 Simple Commander API</em> to coordinate multi-step task sequences, such as navigating between zones, picking up or dropping shelves, and returning to the base station. The task manager also monitors execution progress and handles recovery behaviors autonomously.</p>
   </li>
   <li>
-    <p><strong>Shelf Operations</strong><br />
-Automated shelf pickup and placement with precise positioning</p>
-  </li>
-  <li>
-    <p><strong>Safety-First Design</strong><br />
-Comprehensive obstacle detection and avoidance systems</p>
-  </li>
-  <li>
-    <p><strong>Flexible Architecture</strong><br />
-Modular design allowing easy adaptation to different warehouse layouts</p>
+    <p><strong>Automated Warehouse Operations</strong>: Executes warehouse workflows — including navigation to loading/unloading areas, shelf manipulation with the lift mechanism, and safe transport along designated paths. The robot performs all operations autonomously, reducing manual intervention and improving process consistency.</p>
   </li>
 </ul>
 
-<p><a href="https://youtu.be/EtJWyMgCmgQ"><img src="http://0.0.0.0:4000/assets/warehouse_robot.gif" alt="Final demo" /></a>
-<img src="http://0.0.0.0:4000/assets/warehouse_positions.png" width="70%" /></p>
-
-<p>The project implements a comprehensive warehouse automation system with several key components:</p>
+<p><img src="http://0.0.0.0:4000/assets/rb1lift.gif" alt="Final demo" /></p>
 
 <ul>
-  <li><strong>Navigation System</strong>: Utilizes the <strong>Nav2 framework</strong> for:
-    <ul>
-      <li>Autonomous localization using AMCL</li>
-      <li>Dynamic path planning with obstacle avoidance</li>
-      <li>Precise trajectory following</li>
-      <li>Real-time replanning capabilities</li>
-    </ul>
-  </li>
-  <li><strong>Task Management</strong>: Implements the <strong>Nav2 Simple Commander API</strong> to:
-    <ul>
-      <li>Coordinate complex sequences of actions</li>
-      <li>Handle operations</li>
-      <li>Monitor task execution</li>
-    </ul>
-  </li>
-  <li><strong>Warehouse Operations</strong>: Automates core logistics tasks including:
-    <ul>
-      <li>Initial pose estimation and localization</li>
-      <li>Navigation to loading/unloading zones</li>
-      <li>Shelf manipulation with robot’s lift mechanism</li>
-      <li>Safe transport through designated pathways</li>
-      <li>Autonomous return to home position</li>
-    </ul>
-  </li>
+  <li><strong>Flexible Deployment</strong>: Designed with a flexible ROS 2 modular structure, allowing for easy integration of new sensors, custom warehouse maps, and scalable expansion to multi-robot systems or larger facilities.</li>
 </ul>
 
 <p>The project maintains two implementations:</p>
 
 <ul>
   <li>A thoroughly tested Gazebo simulation environment</li>
-  <li>A real-world deployment setup in The Construct’s warehouse</li>
+  <li>A real-world deployment setup in <em>The Construct</em>’s warehouse</li>
 </ul>
 
-<p>Both setups utilize identical control logic while accounting for their specific environmental characteristics and constraints.</p>
+<p>Both setups utilize identical control logic while accounting for their specific environmental characteristics and constraints.
+<a href="https://youtu.be/EtJWyMgCmgQ"><img src="http://0.0.0.0:4000/assets/warehouse_robot.gif" alt="Final demo" /></a>
+<img src="http://0.0.0.0:4000/assets/warehouse_positions.png" width="70%" /></p>
 
 </div>
   </main>
