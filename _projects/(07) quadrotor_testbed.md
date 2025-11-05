@@ -1,20 +1,20 @@
 ---
 name: Quadrotor Control
-tools: [PID Controller, C, Embedded, STM32, ROS, Python]
+tools: [C, Embedded, PID Controller, STM32, ROS, Python]
 image: https://kuralme.github.io/assets/aero.jpg
 description: PID angle controller implementation on STM32 for quadrotor test system
 ---
 
-# Quadrotor Control Testbed
+# [Quadrotor Control Testbed](https://github.com/kuralme/Quadrotor_testbed)
 
-My BSc graduation project: an embedded angle-control testbed for a 4-DOF quadrotor. The objective was to design and validate a real-time control stack that stabilizes and controls body angles (roll and pitch) of a fixed-position quadrotor platform.
+This BSc graduation project focuses on developing an embedded angle-control testbed for a 4-DOF quadrotor. The main goal was to design and validate a real-time control stack that stabilizes and controls the euler angles of a fixed-position quadrotor platform.
 
-Key implementation points:
+## Key Implementation Points
 
-- Real-time flight control implemented in C on an STM32F7 microcontroller.
-- Sensor handling and attitude estimation from an IMU, control loop execution, and PWM output to ESCs for motor speed.
-- Low-level PID controllers for attitude stabilization; gains tuned experimentally through bench tests.
-- Ground-station integration using a Python + ROS script to provide joystick-based reference angles and to log telemetry during tests.
-- Lightweight mechanical frame assembled from Makeblock components for rapid prototyping and validation.
+- **Real-Time Control:** Implemented in **C** on an **STM32F7 microcontroller**, ensuring high-speed control loop execution.  
+- **Sensor Handling:** Integrated **BNO055 IMU** data for real-time orientation feedback, enabling precise control calculations.  
+- **PID-Based Stabilization:** Low-level PID controllers regulate roll and pitch; gains were tuned experimentally through bench tests.  
+- **Ground-Station Integration:** Python + ROS scripts provide joystick-based reference angles and log telemetry for monitoring and analysis.  
+- **Rapid Prototyping:** Lightweight mechanical frame assembled from Makeblock components for quick testing and validation.
 
 [![Quad test]({{ site.url }}{{ site.baseurl }}/assets/quad.gif)](https://youtu.be/svHYbfm_wV0)

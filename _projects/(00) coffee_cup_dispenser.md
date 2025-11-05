@@ -1,10 +1,10 @@
 ---
 name: Coffee Cup Dispenser
-tools: [C++, Python, ROS2,  Moveit2, PCL, Opencv, Behavior-tree, Gazebo, Docker]
+tools: [C++, Python, ROS2,  Moveit2, PCL, Opencv, Behavior-trees, Gazebo, Docker]
 image: https://kuralme.github.io/assets/final_sim.gif
 description: A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot
 ---
-# Starbots Coffee Dispenser Project
+# [Starbots Coffee Dispenser Project](https://github.com/kuralme/starbots_coffee_dispenser)
 
 ## Overview
 
@@ -31,10 +31,10 @@ The project is structured into multiple ROS2 packages, each handling specific as
   - Precise placement on the delivery robot's tray
   - Return to home position
 
-The project implemented in two separate branches:
+The project maintains two implementations:
 
-- The main branch is optimized for real-world deployment with the physical UR3e robot
-- A simulation branch that replicates the functionality in a Gazebo environment, allowing for safe testing and validation
+- A simulation branch that replicates same functionality in a Gazebo environment, allowing for safe testing and validation
+- A real-world deployment, ran remotely connected to the *The Construct*'s Starbots Coffee UR3E robot
 
 Both implementations share core functionalities but are specifically tuned for their respective environments, ensuring optimal performance whether in simulation or real-world operation.
 

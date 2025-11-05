@@ -5,7 +5,7 @@ image: https://kuralme.github.io/assets/sdc.gif
 description: Coursera Self-Driving Car Specialization key outcomes of the courses
 ---
 
-# Self-Driving Car Specialization
+# [Self-Driving Car Specialization](https://github.com/kuralme/self_driving_car_specialization)
 
 Through Coursera's Self-Driving Car Specialization, I developed practical skills in autonomous vehicle technology. The program covered essential areas including perception, planning, control, and state estimation. Using the CARLA simulator, I implemented real-world autonomous driving solutions. Here are the key outcomes from each course:
 

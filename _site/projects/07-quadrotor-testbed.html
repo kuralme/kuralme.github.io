@@ -76,18 +76,18 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="quadrotor-control-testbed">Quadrotor Control Testbed</h1>
+  <h1 id="quadrotor-control-testbed"><a href="https://github.com/kuralme/Quadrotor_testbed">Quadrotor Control Testbed</a></h1>
 
-<p>My BSc graduation project: an embedded angle-control testbed for a 4-DOF quadrotor. The objective was to design and validate a real-time control stack that stabilizes and controls body angles (roll and pitch) of a fixed-position quadrotor platform.</p>
+<p>This BSc graduation project focuses on developing an embedded angle-control testbed for a 4-DOF quadrotor. The main goal was to design and validate a real-time control stack that stabilizes and controls the euler angles of a fixed-position quadrotor platform.</p>
 
-<p>Key implementation points:</p>
+<h2 id="key-implementation-points">Key Implementation Points</h2>
 
 <ul>
-  <li>Real-time flight control implemented in C on an STM32F7 microcontroller.</li>
-  <li>Sensor handling and attitude estimation from an IMU, control loop execution, and PWM output to ESCs for motor speed.</li>
-  <li>Low-level PID controllers for attitude stabilization; gains tuned experimentally through bench tests.</li>
-  <li>Ground-station integration using a Python + ROS script to provide joystick-based reference angles and to log telemetry during tests.</li>
-  <li>Lightweight mechanical frame assembled from Makeblock components for rapid prototyping and validation.</li>
+  <li><strong>Real-Time Control:</strong> Implemented in <strong>C</strong> on an <strong>STM32F7 microcontroller</strong>, ensuring high-speed control loop execution.</li>
+  <li><strong>Sensor Handling:</strong> Integrated <strong>BNO055 IMU</strong> data for real-time orientation feedback, enabling precise control calculations.</li>
+  <li><strong>PID-Based Stabilization:</strong> Low-level PID controllers regulate roll and pitch; gains were tuned experimentally through bench tests.</li>
+  <li><strong>Ground-Station Integration:</strong> Python + ROS scripts provide joystick-based reference angles and log telemetry for monitoring and analysis.</li>
+  <li><strong>Rapid Prototyping:</strong> Lightweight mechanical frame assembled from Makeblock components for quick testing and validation.</li>
 </ul>
 
 <p><a href="https://youtu.be/svHYbfm_wV0"><img src="http://0.0.0.0:4000/assets/quad.gif" alt="Quad test" /></a></p>

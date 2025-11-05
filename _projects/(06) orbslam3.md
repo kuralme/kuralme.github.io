@@ -2,10 +2,10 @@
 name: ORB-SLAM3 Tests
 tools: [Visual SLAM, ROS, Kitti, Pangolin]
 image: https://kuralme.github.io/assets/orbslam3.gif
-description: ORB-SLAM3 tested on Kitti dataset
+description: ORB-SLAM3 tested on Kitti dataset using ROS Noetic
 ---
 
-# ORB-SLAM3 Testing
+# [ORB-SLAM3 Testing](https://github.com/kuralme/ORB_SLAM3_fix)
 
 This is a testing implementation that runs ORB‑SLAM3 with ROS, on the KITTI dataset. Modifications are limited to ROS/package integration, dataset I/O, and logging; the core SLAM pipeline follows the original ORB‑SLAM3 design.
 
