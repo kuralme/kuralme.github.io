@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by yousinix
+  Free for personal and commercial use under the MIT license
+  https://github.com/yousinix/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coffee Cup Dispenser">
+  <meta property="og:description" content="A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot">
+  <meta property="og:image" content="https://kuralme.github.io/assets/final_sim.gif">
+
+  <title>Coffee Cup Dispenser</title>
+  <meta name="description" content="A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>MUSTAFA EGE KURAL</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/resume/">Resume</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="starbots-coffee-dispenser-project">Starbots Coffee Dispenser Project</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>This project is the final outcome of my work in The Construct’s Robotics Masterclass, featuring an advanced robotics application that demonstrates refined Pick-and-Place capabilities with the <strong>UR3e robotic arm</strong>. The Starbots Coffee Dispenser system is designed to automate a crucial step in robotic coffee service - transferring coffee cups from a counter to a delivery robot’s tray.</p>
+
+<iframe width="800" height="450" src="https://www.youtube.com/watch?v=4XE2JNb8slM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<p><br /></p>
+
+<p>The project is structured into multiple ROS2 packages, each handling specific aspects of the automation:</p>
+
+<ul>
+  <li><strong>Motion Planning &amp; Control</strong>: Utilizes <strong>MoveIt2</strong> framework for:
+    <ul>
+      <li>Sophisticated path planning with selected OMPL planners, considering environmental constraints</li>
+      <li>Real-time trajectory generation</li>
+      <li>Precise end-effector control for cup manipulation</li>
+    </ul>
+  </li>
+  <li><strong>Perception Pipeline</strong>: Implements an object detection system using both RGB camera feeds and depth information. The system processes point cloud data to:
+    <ul>
+      <li>Detect and locate coffee cups on the counter</li>
+      <li>Identify available slots on the delivery robot’s tray</li>
+      <li>Generate an OctoMap representation of the environment for collision-aware planning</li>
+    </ul>
+  </li>
+  <li><strong>Task Orchestration</strong>: Employs a behavior tree architecture to manage the complete task sequence:
+    <ul>
+      <li>Pre-pick positioning</li>
+      <li>Cup grasping operations</li>
+      <li>Transfer movements involves carrying the cup upright</li>
+      <li>Precise placement on the delivery robot’s tray</li>
+      <li>Return to home position</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The project implemented in two separate branches:</p>
+
+<ul>
+  <li>The main branch is optimized for real-world deployment with the physical UR3e robot</li>
+  <li>A simulation branch that replicates the functionality in a Gazebo environment, allowing for safe testing and validation</li>
+</ul>
+
+<p>Both implementations share core functionalities but are specifically tuned for their respective environments, ensuring optimal performance whether in simulation or real-world operation.</p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Mustafa Ege Kural</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+
+</div><small id="attribution">
+    theme <a href="https://github.com/yousinix/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
