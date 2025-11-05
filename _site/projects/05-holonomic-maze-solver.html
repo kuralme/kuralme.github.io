@@ -22,11 +22,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Holonomic Maze-Solver">
-  <meta property="og:description" content="A ROS2-based maze solver AMR project. The robot navigates a maze using programmed PID controller to follow waypoints, and real-time sensor feedback for wall ...">
+  <meta property="og:description" content="A ROS2-based maze solver robot project. The robot navigates a maze using programmed PID controller to follow waypoints, and real-time sensor feedback for wal...">
   <meta property="og:image" content="https://kuralme.github.io/assets/rosbotxl.gif">
 
   <title>Holonomic Maze-Solver</title>
-  <meta name="description" content="A ROS2-based maze solver AMR project. The robot navigates a maze using programmed PID controller to follow waypoints, and real-time sensor feedback for wall ...">
+  <meta name="description" content="A ROS2-based maze solver robot project. The robot navigates a maze using programmed PID controller to follow waypoints, and real-time sensor feedback for wal...">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -78,7 +78,7 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="holonomic-maze-solver-project"><a href="https://github.com/kuralme/holonomic_robot_project">Holonomic Maze-Solver Project</a></h1>
 
-<p>This project implements <strong>PID-based control</strong> for the <strong>ROSBot XL</strong> of, a holonomic (omni-directional) mobile robot by Husarion, enabling precise navigation in both simulation and real-world environments. The system runs in <strong>Gazebo simulation</strong> as well as on the real robot within the <em>Cyberworld Lab</em>, a remote robotics testing environment provided by <em>The Construct</em>.</p>
+<p>This project implements <strong>PID</strong>-based control for the ROSBot XL, a holonomic (omni-directional) mobile robot by Husarion, enabling precise navigation in both simulation and real-world environments. The system runs in <em>Gazebo simulation</em> as well as on the real robot within the <em>Cyberworld Lab</em>, a remote robotics testing environment provided by <em>The Construct</em>.</p>
 
 <p>The robot navigates through mazes under defined constraints, combining <strong>waypoint-based path planning</strong>, <strong>holonomic motion control</strong>, and <strong>real-time sensor feedback</strong> from its <strong>LIDAR</strong> and onboard odometry. The approach uses <strong>C++ and ROS2</strong> to continuously calculate control commands, ensuring accurate positioning, smooth trajectory tracking, and efficient movement through each waypoint toward the final goal.</p>
 
@@ -91,13 +91,13 @@
     <p><strong>Holonomic Motion Control:</strong> Uses PID controllers to achieve precise movement in all directions, leveraging the robot’s omni-directional wheels for agile maneuvers.</p>
   </li>
   <li>
+    <p><strong>C++ and ROS2 Integration:</strong> The control algorithm is implemented in <strong>C++</strong> with ROS2 nodes, enabling modular, real-time operation.</p>
+  </li>
+  <li>
     <p><strong>Waypoint-Based Navigation:</strong> Navigates through pre-defined waypoints in the maze both normal and reverse directions, doing simple motions in each step. The video demonstrates reversed version.</p>
   </li>
   <li>
     <p><strong>Real-Time Sensor Feedback:</strong> Integrates LIDAR data to detect walls, maintain accurate positioning, and adjust control commands dynamically.</p>
-  </li>
-  <li>
-    <p><strong>C++ and ROS2 Integration:</strong> The control algorithm is implemented in <strong>C++</strong> with ROS2 nodes, enabling modular, real-time operation.</p>
   </li>
 </ul>
 

@@ -1,6 +1,6 @@
 ---
 name: Coffee Cup Dispenser
-tools: [C++, Python, ROS2,  Moveit2, PCL, Opencv, Behavior-trees, Gazebo, Docker]
+tools: [C++, Python, ROS2,  Moveit2, PCL, Opencv, BT, Gazebo, Docker]
 image: https://kuralme.github.io/assets/final_sim.gif
 description: A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot
 ---

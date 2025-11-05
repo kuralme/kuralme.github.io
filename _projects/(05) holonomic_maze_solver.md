@@ -2,12 +2,12 @@
 name: Holonomic Maze-Solver
 tools: [C++, ROS2, PID Control, Gazebo, Holonomic Robot, LIDAR]
 image: https://kuralme.github.io/assets/rosbotxl.gif
-description: A ROS2-based maze solver AMR project. The robot navigates a maze using programmed PID controller to follow waypoints, and real-time sensor feedback for wall avoidance and course correction
+description: A ROS2-based maze solver robot project. The robot navigates a maze using programmed PID controller to follow waypoints, and real-time sensor feedback for wall avoidance and course correction
 ---
 
 # [Holonomic Maze-Solver Project](https://github.com/kuralme/holonomic_robot_project)
 
-This project implements **PID-based control** for the **ROSBot XL** of, a holonomic (omni-directional) mobile robot by Husarion, enabling precise navigation in both simulation and real-world environments. The system runs in **Gazebo simulation** as well as on the real robot within the *Cyberworld Lab*, a remote robotics testing environment provided by *The Construct*.
+This project implements **PID**-based control for the ROSBot XL, a holonomic (omni-directional) mobile robot by Husarion, enabling precise navigation in both simulation and real-world environments. The system runs in *Gazebo simulation* as well as on the real robot within the *Cyberworld Lab*, a remote robotics testing environment provided by *The Construct*.
 
 The robot navigates through mazes under defined constraints, combining **waypoint-based path planning**, **holonomic motion control**, and **real-time sensor feedback** from its **LIDAR** and onboard odometry. The approach uses **C++ and ROS2** to continuously calculate control commands, ensuring accurate positioning, smooth trajectory tracking, and efficient movement through each waypoint toward the final goal.
 
@@ -17,11 +17,11 @@ The robot navigates through mazes under defined constraints, combining **waypoin
 
 - **Holonomic Motion Control:** Uses PID controllers to achieve precise movement in all directions, leveraging the robot’s omni-directional wheels for agile maneuvers.
 
+- **C++ and ROS2 Integration:** The control algorithm is implemented in **C++** with ROS2 nodes, enabling modular, real-time operation.
+
 - **Waypoint-Based Navigation:** Navigates through pre-defined waypoints in the maze both normal and reverse directions, doing simple motions in each step. The video demonstrates reversed version.
 
 - **Real-Time Sensor Feedback:** Integrates LIDAR data to detect walls, maintain accurate positioning, and adjust control commands dynamically.
-
-- **C++ and ROS2 Integration:** The control algorithm is implemented in **C++** with ROS2 nodes, enabling modular, real-time operation.
 
 The project has several implementation steps:
 
