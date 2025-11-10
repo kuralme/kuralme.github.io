@@ -22,11 +22,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Coffee Cup Dispenser">
-  <meta property="og:description" content="A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot">
-  <meta property="og:image" content="https://kuralme.github.io/assets/final_sim.gif">
+  <meta property="og:description" content="A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot tray cup hole using Moveit2 planning">
+  <meta property="og:image" content="https://kuralme.github.io/assets/final.gif">
 
   <title>Coffee Cup Dispenser</title>
-  <meta name="description" content="A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot">
+  <meta name="description" content="A 6-DOF robot arm programmed to manipulate cup from counter to delivery robot tray cup hole using Moveit2 planning">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -78,19 +78,19 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="starbots-coffee-dispenser-project"><a href="https://github.com/kuralme/starbots_coffee_dispenser">Starbots Coffee Dispenser Project</a></h1>
 
-<h2 id="overview">Overview</h2>
+<p>The final outcome of my work in The Construct’s Robotics Masterclass, featuring an advanced robotics application that demonstrates refined Pick-and-Place capabilities with the <strong>UR3e robotic arm</strong>. The Starbots Coffee Dispenser system is designed to automate a crucial step in robotic coffee service - transferring coffee cups from a counter to the delivery robot’s tray.</p>
 
-<p>This project is the final outcome of my work in The Construct’s Robotics Masterclass, featuring an advanced robotics application that demonstrates refined Pick-and-Place capabilities with the <strong>UR3e robotic arm</strong>. The Starbots Coffee Dispenser system is designed to automate a crucial step in robotic coffee service - transferring coffee cups from a counter to a delivery robot’s tray.</p>
-
-<p><a href="https://youtu.be/4XE2JNb8slM"><img src="http://0.0.0.0:4000/assets/final_sim.gif" alt="Final demo" /></a></p>
+<p><a href="https://youtube.com/shorts/2kQtupTTEGs?feature=share"><img src="http://0.0.0.0:4000/assets/final.gif" alt="Final demo" /></a></p>
 
 <p>The project is structured into multiple ROS2 packages, each handling specific aspects of the automation:</p>
 
 <ul>
   <li><strong>Motion Planning &amp; Control</strong>: Utilizes <strong>MoveIt2</strong> framework for:
     <ul>
-      <li>Sophisticated path planning with selected OMPL planners, considering environmental constraints</li>
-      <li>Real-time trajectory generation</li>
+      <li>Well defined robot kinematics</li>
+      <li>Sophisticated path planning with selected OMPL planners</li>
+      <li>Real-time, collision aware trajectory generation</li>
+      <li>IK Kinematic solving</li>
       <li>Precise end-effector control for cup manipulation</li>
     </ul>
   </li>
@@ -101,12 +101,12 @@
       <li>Generate an OctoMap representation of the environment for collision-aware planning</li>
     </ul>
   </li>
-  <li><strong>Task Orchestration</strong>: Employs a behavior tree architecture to manage the complete task sequence:
+  <li><strong>Task Management</strong>: Employs a behavior tree architecture to oversee the complete task sequence:
     <ul>
       <li>Pre-pick positioning</li>
-      <li>Cup grasping operations</li>
+      <li>Approach/Retreat, Cup grasping operations</li>
       <li>Transfer movements involves carrying the cup upright</li>
-      <li>Precise placement on the delivery robot’s tray</li>
+      <li>Precise placement to goal cup holder on the delivery robot’s tray</li>
       <li>Return to home position</li>
     </ul>
   </li>

@@ -1,6 +1,6 @@
 ---
 name: ORB-SLAM3 Tests
-tools: [Visual SLAM, ROS, Kitti, Pangolin]
+tools: [ROS, CMake, Visual SLAM, Kitti, Pangolin]
 image: https://kuralme.github.io/assets/orbslam3.gif
 description: ORB-SLAM3 tested on Kitti dataset using ROS Noetic with package helpers
 ---

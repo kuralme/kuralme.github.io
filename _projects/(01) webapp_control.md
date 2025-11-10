@@ -1,11 +1,11 @@
 ---
-name: Webapp Robot Control
+name: Robot Control Webapp
 tools: [ROS2, Nav2, Gazebo, JS]
 image: https://kuralme.github.io/assets/webapp.gif
 description: A web application that connects to a ROS2 robot system, allowing users to control and monitor a simulated robot through an interactive interface
 ---
 
-# [Webapp Robot Control](https://github.com/kuralme/fastbot_webapp)
+# [Robot Control Webapp](https://github.com/kuralme/fastbot_webapp)
 
 Project aims to create a web application that communicates with a ROS2 system, allowing users to send commands and receive data from a robot and the connection to the webapp is enabled via *Rosbridge server*. The goal is to provide a user-friendly interface for controlling FastBot robot within Gazebo environment, enabling seamless interaction for both manual control and autonomous navigation. The webapp features various tools and visualizations to help users effectively manage and monitor the robot.
 

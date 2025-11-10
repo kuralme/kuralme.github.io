@@ -1,13 +1,13 @@
 ---
 name: Warehouse Automation Robot
-tools: [ROS2, Nav2, Python, LIDAR]
+tools: [ROS2, Nav2, Python, LiDAR]
 image: https://kuralme.github.io/assets/warehouse_robot.gif
-description: RB1, an AMR demonstrating robotics can streamline warehouse logistics — autonomously localizing, navigating, and transporting shelves in both simulation and real environments
+description: RB1, an AMR demonstrating robotics can streamline warehouse logistics — autonomously localizing, navigating, and transporting shelves
 ---
 
 # [Warehouse Automation Project](https://github.com/kuralme/warehouse_project)
 
-This project, developed as part of *Robotics Masterclass* ROS2 Navigation Course, demonstrates advanced autonomous navigation capabilities using the **RB1 mobile robot** by Robotnik. The system showcases a complete warehouse automation solution that leverages the **ROS 2 Nav2 stack** for robust autonomous navigation and task execution in both simulated and real environments.
+Developed as part of *Robotics Masterclass* ROS2 Navigation Course, the project demonstrates advanced autonomous navigation capabilities using the **RB1 mobile robot** by Robotnik. The system showcases a complete warehouse automation solution that leverages the **ROS 2 Nav2 stack** for robust autonomous navigation and task execution in both simulated and real environments.
 
 ## Key Features
 
