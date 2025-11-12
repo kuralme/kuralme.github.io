@@ -22,11 +22,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Quadrotor Control">
-  <meta property="og:description" content="PID angle controller implementation on STM32 for quadrotor test system">
+  <meta property="og:description" content="Bare-metal PID angle controller implementation on STM32 for quadrotor test system">
   <meta property="og:image" content="https://kuralme.github.io/assets/aero.jpg">
 
   <title>Quadrotor Control</title>
-  <meta name="description" content="PID angle controller implementation on STM32 for quadrotor test system">
+  <meta name="description" content="Bare-metal PID angle controller implementation on STM32 for quadrotor test system">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -83,9 +83,9 @@
 <h2 id="key-implementation-points">Key Implementation Points</h2>
 
 <ul>
-  <li><strong>Real-Time Control:</strong> Implemented in <strong>C</strong> on an <strong>STM32F7 microcontroller</strong>, ensuring high-speed control loop execution.</li>
+  <li><strong>Real-Time Control:</strong> Developed in <strong>C</strong> on an <strong>STM32F7 microcontroller</strong>, ensuring high-speed control loop execution. <strong>Keil µVision/CubeMX</strong> used for configuring peripherals.</li>
+  <li><strong>PID-Based Stabilization:</strong> Low-level PID controllers regulate euler angles; and gains were tuned by manual-tuning method through bench tests.</li>
   <li><strong>Sensor Handling:</strong> Integrated <strong>BNO055 IMU</strong> data for real-time orientation feedback, enabling precise control calculations.</li>
-  <li><strong>PID-Based Stabilization:</strong> Low-level PID controllers regulate roll and pitch; gains were tuned experimentally through bench tests.</li>
   <li><strong>Ground-Station Integration:</strong> Python + ROS scripts provide joystick-based reference angles and log telemetry for monitoring and analysis.</li>
   <li><strong>Rapid Prototyping:</strong> Lightweight mechanical frame assembled from Makeblock components for quick testing and validation.</li>
 </ul>
