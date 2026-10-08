@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by yousinix
+  Free for personal and commercial use under the MIT license
+  https://github.com/yousinix/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Robot Control Webapp">
+  <meta property="og:description" content="A web application that connects to a ROS2 robot system, allowing users to control and monitor a simulated robot through an interactive interface">
+  <meta property="og:image" content="https://kuralme.github.io/assets/webapp.gif">
+
+  <title>Robot Control Webapp</title>
+  <meta name="description" content="A web application that connects to a ROS2 robot system, allowing users to control and monitor a simulated robot through an interactive interface">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>MUSTAFA EGE KURAL</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
+
+      <a class="nav-item nav-link " href="/resume/">Resume</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="robot-control-webapp"><a href="https://github.com/kuralme/fastbot_webapp">Robot Control Webapp</a></h1>
+
+<p>Project aims to create a web application that communicates with a ROS2 system, allowing users to send commands and receive data from a robot and the connection to the webapp is enabled via <em>Rosbridge server</em>. The goal is to provide a user-friendly interface for controlling FastBot robot within Gazebo environment, enabling seamless interaction for both manual control and autonomous navigation. The webapp features various tools and visualizations to help users effectively manage and monitor the robot.</p>
+
+<h2 id="key-features">Key Features</h2>
+
+<p>The following key features are implemented in the web application:</p>
+
+<ul>
+  <li>
+    <p><strong>Interactive Map:</strong> Displays the robot’s current environment in real-time. The map is updated as the robot moves, providing users with a visual representation of its surroundings.</p>
+  </li>
+  <li>
+    <p><strong>3D Robot Model</strong>: A 3D visualization of the robot is included on the interface. This model updates in real-time to reflect the robot’s orientation and movement, offering users a clear representation of the robot’s position and attitude.</p>
+  </li>
+  <li>
+    <p><strong>Camera View</strong>: A live camera feed showing the view the robot sees from its front-facing camera. This helps users understand the robot’s perspective and navigate more intuitively.</p>
+  </li>
+  <li>
+    <p><strong>Virtual Joystick</strong>: The app features a virtual joystick for manual control. This allows users to drive the robot using the arrow keys or a graphical joystick on the web interface, providing real-time control over movement and speed.</p>
+  </li>
+  <li>
+    <p><strong>Current Speed</strong>: The current speed of the robot is displayed in real-time. This gives the user immediate feedback on the robot’s movement velocity.</p>
+  </li>
+  <li>
+    <p><strong>Position &amp; Orientation</strong>: The app provides the current position and orientation of the robot. This is essential for autonomous navigation or precise control.</p>
+  </li>
+  <li>
+    <p><strong>Waypoint Buttons</strong>: Users can set predefined waypoints on the map. With the waypoint buttons, users can command the robot to autonomously navigate to specific locations within the environment.</p>
+  </li>
+</ul>
+
+<p><img src="http://0.0.0.0:4000/assets/webapp.gif" alt="Webapp demo" /></p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Mustafa Ege Kural</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:kuralme@protonmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/kuralme"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/kme9/"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com//@kuralme1079"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/yousinix/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
